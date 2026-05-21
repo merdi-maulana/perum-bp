@@ -1,12 +1,12 @@
-import Navbar from "../components/layout/Navbar";
-import Hero from "../components/Hero";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/Hero";
 import SiteplanSection from "@/components/SiteplanSection";
 import UnitOptionsSection from "@/components/UnitOptionsSection";
-import VideoSection from "../components/VideoSection";
+import VideoSection from "@/components/VideoSection";
 import ContactSection from "@/components/ContactSection";
 import GallerySection from "@/components/GallerySection";
 
-export default function Home() {
+export default function TestPage() {
   return (
     <div className="flex-1 flex flex-col items-center w-full bg-background min-h-screen">
       <Navbar />
@@ -14,14 +14,15 @@ export default function Home() {
         <section id="hero">
           <Hero />
         </section>
-
-        <VideoSection />
-
+        
         {/* Section Site Plan */}
         <SiteplanSection />
 
         {/* Section Pilihan Unit */}
         <UnitOptionsSection />
+
+        {/* Section Video Preview */}
+        <VideoSection />
 
         {/* Section Kontak via WhatsApp */}
         <ContactSection />

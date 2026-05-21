@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
+import MobileNavbar from "@/components/MobileNavbar";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -24,8 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className={`${plusJakartaSans.variable} ${inter.variable} scroll-smooth`}>
-      <body className="min-h-screen bg-background text-foreground flex flex-col font-body">
+      <body className="min-h-screen bg-background text-foreground flex flex-col font-body pb-16 md:pb-0">
         {children}
+        <WhatsAppButton variant="floating" />
+        <MobileNavbar />
       </body>
     </html>
   );

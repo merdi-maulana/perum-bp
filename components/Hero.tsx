@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import gerbang from "@/public/images/gerbang.png";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Hero(){
-const whatsappUrl = "https://wa.me/6281234567890";
 
     return(
         <section className="relative w-screen min-h-screen flex items-center justify-center">
@@ -34,12 +34,11 @@ const whatsappUrl = "https://wa.me/6281234567890";
               Wujudkan impian memiliki rumah dengan konsep nature-living yang terjangkau. DP ringan, cicilan mulai Rp 1 juta-an/bulan.
             </p>
             <div className="flex flex-wrap gap-4 mt-4">
-              <Link 
-                href={whatsappUrl}
-                className="bg-whatsapp text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:scale-105 transition-transform flex items-center gap-2 shadow-[0_10px_20px_rgba(37,211,102,0.3)]"
-              >
-                Tanya WhatsApp
-              </Link>
+              <WhatsAppButton
+                label="Tanya WhatsApp"
+                message="Halo Bumi Pasanggrahan, saya tertarik dengan informasi perumahan. Bisa minta info brosur dan KPR?"
+                className="!text-lg px-8 py-4"
+              />
               <Link 
                 href="#tipe-rumah"
                 className="bg-white/10 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/20 transition-all shadow-lg"
