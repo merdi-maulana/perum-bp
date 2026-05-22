@@ -45,13 +45,13 @@ export default function VirtualTourPage() {
           id: "exterior",
           title: "Rumah Subsidi (Tampak Depan)",
           subtitle: "Jelajahi kawasan perumahan subsidi 360°",
-          imagePath: "/panorama/subsidi/rumah-tampak-depan.jpg",
+          imagePath: "/panorama/komersil/depansubsidi.png",
           initialRotation: -1.42,
           hotspots: [
             {
               position: [-200, -8, -30],
-              targetScene: "ruang_tamu",
-              label: "Masuk\nRumah",
+              targetScene: "teras_subsidi",
+              label: "Depan\nTeras",
             },
           ],
           info: {
@@ -62,11 +62,37 @@ export default function VirtualTourPage() {
               "Fasad luar unit subsidi perumahan Bumi Pasanggrahan dengan gaya arsitektur modern minimalis. Sudah dilengkapi dengan area carport beton, taman depan asri, sirkulasi udara yang luas, dan struktur kokoh dinding dobel bata merah.",
           },
         },
+        teras_subsidi: {
+          id: "teras_subsidi",
+          title: "Teras Subsidi",
+          subtitle: "Area outdoor yang nyaman",
+          imagePath: "/panorama/komersil/terssubsidi.png",
+          initialRotation: 0,
+          hotspots: [
+            {
+              position: [0, -20, 100],
+              targetScene: "exterior",
+              label: "Keluar",
+            },
+            {
+              position: [-980, -50, 80],
+              targetScene: "ruang_tamu",
+              label: "Ruang\nTamu",
+            },
+          ],
+          info: {
+            imagePath: "/images/rumah_subsidi_2.jpg",
+            dimensions: "3m x 3.5m",
+            area: "10.5 m²",
+            description:
+              "Area ruang tamu & ruang keluarga yang fungsional dengan pencahayaan alami yang melimpah dari jendela depan. Layout yang dinamis memudahkan penataan sofa dan meja keluarga minimalis sesuai kebutuhan.",
+          },
+        },
         ruang_tamu: {
           id: "ruang_tamu",
           title: "Ruang Tamu (Tipe Subsidi)",
           subtitle: "Desain interior modern & fungsional",
-          imagePath: "/panorama/subsidi/ruang_tamu.jpg",
+          imagePath: "/panorama/komersil/tengahsubsidi.png",
           initialRotation: 0,
           hotspots: [
             {
