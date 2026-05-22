@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useState, useEffect } from 'react';
+import { Suspense, useState, useEffect, Component, type ReactNode } from 'react';
 import Image from 'next/image';
 import { Canvas, useLoader } from '@react-three/fiber';
 import { OrbitControls, Html, Preload } from '@react-three/drei';
@@ -32,6 +32,28 @@ export interface SceneDef {
 interface VirtualTourProps {
   scenes: Record<string, SceneDef>;
   initialSceneId: string;
+}
+
+// Error Boundary untuk menangkap error saat load texture gagal
+class TextureErrorBoundary extends Component<
+  { children: ReactNode; fallback: ReactNode },
+  { hasError: boolean }
+> {
+  constructor(props: { children: ReactNode; fallback: ReactNode }) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return this.props.fallback;
+    }
+    return this.props.children;
+  }
 }
 
 // Komponen untuk me-render gambar 360 derajat di dalam bola (sphere)
@@ -205,7 +227,17 @@ export default function VirtualTour({ scenes, initialSceneId }: VirtualTourProps
         }>
           {/* Group ini berfungsi untuk merotasi gambar secara otomatis ke titik awal */}
           <group rotation={[0, scene.initialRotation || 0, 0]} onClick={handlePointerDown}>
-            <Dome imagePath={scene.imagePath} />
+            <TextureErrorBoundary fallback={
+              <Html center>
+                <div className="flex flex-col items-center gap-3 text-center max-w-xs">
+                  <div className="text-red-400 text-4xl">⚠️</div>
+                  <div className="text-white font-medium">Gagal memuat panorama</div>
+                  <div className="text-white/60 text-sm">Gambar tidak ditemukan atau gagal dimuat dari server.</div>
+                </div>
+              </Html>
+            }>
+              <Dome imagePath={scene.imagePath} />
+            </TextureErrorBoundary>
             
             {/* Render semua hotspot secara dinamis */}
             {scene.hotspots.map((hotspot, idx) => (
