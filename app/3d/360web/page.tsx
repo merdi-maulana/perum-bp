@@ -45,7 +45,7 @@ export default function VirtualTourPage() {
           id: "exterior",
           title: "Rumah Subsidi (Tampak Depan)",
           subtitle: "Jelajahi kawasan perumahan subsidi 360°",
-          imagePath: "/panorama/subsidi/rumah_tampak_depan.jpg",
+          imagePath: "/panorama/subsidi/rumah-tampak-depan.jpg",
           initialRotation: -1.42,
           hotspots: [
             {
