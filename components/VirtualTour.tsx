@@ -2,9 +2,10 @@
 
 import { Suspense, useState, useEffect, Component, type ReactNode } from 'react';
 import Image from 'next/image';
-import { Canvas, useLoader } from '@react-three/fiber';
-import { OrbitControls, Html, Preload } from '@react-three/drei';
+import { Canvas, useLoader, useThree } from '@react-three/fiber';
+import { OrbitControls, Html } from '@react-three/drei';
 import * as THREE from 'three';
+import { configurePanoramaTexture, PanoramaTextureLoader } from '@/lib/panorama-texture';
 
 export interface HotspotDef {
   position: [number, number, number];
@@ -58,13 +59,13 @@ class TextureErrorBoundary extends Component<
 
 // Komponen untuk me-render gambar 360 derajat di dalam bola (sphere)
 function Dome({ imagePath }: { imagePath: string }) {
-  const texture = useLoader(THREE.TextureLoader, imagePath);
-  
+  const texture = useLoader(PanoramaTextureLoader, imagePath);
+  const { gl } = useThree();
+
   /* eslint-disable react-hooks/immutability */
   useEffect(() => {
-    // Memastikan gambar dirender dengan warna yang benar di Three.js
-    texture.colorSpace = THREE.SRGBColorSpace;
-  }, [texture]);
+    configurePanoramaTexture(texture, gl);
+  }, [texture, gl]);
   /* eslint-enable react-hooks/immutability */
   
   return (
@@ -80,7 +81,12 @@ export default function VirtualTour({ scenes, initialSceneId }: VirtualTourProps
   const [showGuide, setShowGuide] = useState(true);
   const [fadeGuide, setFadeGuide] = useState(false);
   const [showInfoModal, setShowInfoModal] = useState(false);
+  const [dpr, setDpr] = useState(1);
   const scene = scenes[currentSceneId];
+
+  useEffect(() => {
+    setDpr(Math.min(window.devicePixelRatio || 1, 2));
+  }, []);
 
   const dismissGuide = () => {
     if (showGuide && !fadeGuide) {
@@ -216,7 +222,16 @@ export default function VirtualTour({ scenes, initialSceneId }: VirtualTourProps
         </div>
       )}
 
-      <Canvas camera={{ position: [0, 0, 0.1], fov: 60 }}>
+      <Canvas
+        camera={{ position: [0, 0, 0.1], fov: 60 }}
+        dpr={dpr}
+        gl={{
+          antialias: true,
+          powerPreference: 'high-performance',
+          alpha: false,
+        }}
+        style={{ width: '100%', height: '100%', touchAction: 'none' }}
+      >
         <Suspense fallback={
           <Html center>
             <div className="flex flex-col items-center gap-4">
@@ -263,7 +278,6 @@ export default function VirtualTour({ scenes, initialSceneId }: VirtualTourProps
             ))}
           </group>
           
-          <Preload all />
         </Suspense>
         
         {/* Enable rotasi drag oleh pengguna */}
