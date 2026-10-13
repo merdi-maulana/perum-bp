@@ -45,7 +45,7 @@ export default function VirtualTourPage() {
           id: "exterior",
           title: "Rumah Subsidi (Tampak Depan)",
           subtitle: "Jelajahi kawasan perumahan subsidi 360°",
-          imagePath: "/panorama/komersil/depansubsidi.png",
+          imagePath: "/panorama/komersil/depansubsidi.webp",
           initialRotation: -1.42,
           hotspots: [
             {
@@ -66,7 +66,7 @@ export default function VirtualTourPage() {
           id: "teras_subsidi",
           title: "Teras Subsidi",
           subtitle: "Area outdoor yang nyaman",
-          imagePath: "/panorama/komersil/terssubsidi.png",
+          imagePath: "/panorama/komersil/terssubsidi.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -92,7 +92,7 @@ export default function VirtualTourPage() {
           id: "ruang_tamu",
           title: "Ruang Tamu (Tipe Subsidi)",
           subtitle: "Desain interior modern & fungsional",
-          imagePath: "/panorama/komersil/tengahsubsidi.png",
+          imagePath: "/panorama/komersil/tengahsubsidi.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -133,7 +133,7 @@ export default function VirtualTourPage() {
           id: "kamar_utama",
           title: "Kamar Utama (Tipe Subsidi)",
           subtitle: "Kamar tidur utama bersih & nyaman",
-          imagePath: "/panorama/subsidi/kamar_utama.jpg",
+          imagePath: "/panorama/subsidi/kamar_utama.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -143,7 +143,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/subsidi/kamar_utama.jpg",
+            imagePath: "/panorama/subsidi/kamar_utama.webp",
             dimensions: "3m x 3m",
             area: "9 m²",
             description:
@@ -154,7 +154,7 @@ export default function VirtualTourPage() {
           id: "kamar_anak",
           title: "Kamar Anak (Tipe Subsidi)",
           subtitle: "Kamar tidur anak yang ceria",
-          imagePath: "/panorama/subsidi/kamar_anak.jpg",
+          imagePath: "/panorama/subsidi/kamar_anak.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -164,7 +164,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/subsidi/kamar_anak.jpg",
+            imagePath: "/panorama/subsidi/kamar_anak.webp",
             dimensions: "2.5m x 3m",
             area: "7.5 m²",
             description:
@@ -175,7 +175,7 @@ export default function VirtualTourPage() {
           id: "dapur",
           title: "Dapur (Tipe Subsidi)",
           subtitle: "Dapur bersih siap pakai",
-          imagePath: "/panorama/subsidi/dapur.jpg",
+          imagePath: "/panorama/subsidi/dapur.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -185,7 +185,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/subsidi/dapur.jpg",
+            imagePath: "/panorama/subsidi/dapur.webp",
             dimensions: "2m x 3m",
             area: "6 m²",
             description:
@@ -196,7 +196,7 @@ export default function VirtualTourPage() {
           id: "wc",
           title: "Kamar Mandi (Tipe Subsidi)",
           subtitle: "Fasilitas sanitasi bersih & higienis",
-          imagePath: "/panorama/subsidi/wc_subsidi.jpg",
+          imagePath: "/panorama/subsidi/wc_subsidi.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -206,7 +206,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/subsidi/wc_subsidi.jpg",
+            imagePath: "/panorama/subsidi/wc_subsidi.webp",
             dimensions: "1.5m x 1.5m",
             area: "2.25 m²",
             description:
@@ -242,7 +242,7 @@ export default function VirtualTourPage() {
           id: "exterior",
           title: "Rumah Komersil (Tampak Depan)",
           subtitle: "Fasad luar tipe komersil eksklusif",
-          imagePath: "/panorama/komersil/tampak_depan_komersil.png",
+          imagePath: "/panorama/komersil/tampak_depan_komersil.webp",
           initialRotation: -1.2,
           hotspots: [
             {
@@ -263,7 +263,7 @@ export default function VirtualTourPage() {
           id: "teras",
           title: "Teras Depan (Tipe Komersil)",
           subtitle: "Teras depan luas & asri",
-          imagePath: "/panorama/komersil/teras_komersil.png",
+          imagePath: "/panorama/komersil/teras_komersil.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -278,7 +278,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/komersil/teras_komersil.png",
+            imagePath: "/panorama/komersil/teras_komersil.webp",
             dimensions: "2.5m x 3m",
             area: "7.5 m²",
             description:
@@ -289,7 +289,7 @@ export default function VirtualTourPage() {
           id: "ruang_tamu",
           title: "Ruang Tamu (Tipe Komersil)",
           subtitle: "Interior ruang keluarga premium & mewah",
-          imagePath: "/panorama/komersil/tamu_komersil.png",
+          imagePath: "/panorama/komersil/tamu_komersil.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -304,7 +304,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/komersil/tamu_komersil.png",
+            imagePath: "/panorama/komersil/tamu_komersil.webp",
             dimensions: "4m x 4m",
             area: "16 m²",
             description:
@@ -315,7 +315,7 @@ export default function VirtualTourPage() {
           id: "ruang_tengah",
           title: "Ruang Tengah (Tipe Komersil)",
           subtitle: "Ruang tengah keluarga multi-fungsi",
-          imagePath: "/panorama/komersil/Ruang_tengah_komersil.png",
+          imagePath: "/panorama/komersil/Ruang_tengah_komersil.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -330,7 +330,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/komersil/Ruang_tengah_komersil.png",
+            imagePath: "/panorama/komersil/Ruang_tengah_komersil.webp",
             dimensions: "4m x 5m",
             area: "20 m²",
             description:
@@ -341,7 +341,7 @@ export default function VirtualTourPage() {
           id: "dapur",
           title: "Dapur (Tipe Komersil)",
           subtitle: "Dapur modern, bersih, & estetik",
-          imagePath: "/panorama/komersil/dapur_komersil.png",
+          imagePath: "/panorama/komersil/dapur_komersil.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -351,7 +351,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/komersil/dapur_komersil.png",
+            imagePath: "/panorama/komersil/dapur_komersil.webp",
             dimensions: "3m x 3m",
             area: "9 m²",
             description:
@@ -389,7 +389,7 @@ export default function VirtualTourPage() {
           id: "exterior",
           title: "Halaman Masjid Al-Muhajirin",
           subtitle: "Masjid megah di dalam kawasan perumahan",
-          imagePath: "/panorama/subsidi/scene_74.jpg",
+          imagePath: "/panorama/subsidi/scene_74.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -399,7 +399,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/subsidi/scene_74.jpg",
+            imagePath: "/panorama/subsidi/scene_74.webp",
             dimensions: "15m x 15m",
             area: "225 m²",
             description:
@@ -410,7 +410,7 @@ export default function VirtualTourPage() {
           id: "interior",
           title: "Ruang Utama Masjid",
           subtitle: "Interior masjid yang luas, sejuk & tertib",
-          imagePath: "/panorama/subsidi/scene_75.jpg",
+          imagePath: "/panorama/subsidi/scene_75.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -420,7 +420,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/subsidi/scene_75.jpg",
+            imagePath: "/panorama/subsidi/scene_75.webp",
             dimensions: "12m x 12m",
             area: "144 m²",
             description:
@@ -455,7 +455,7 @@ export default function VirtualTourPage() {
           id: "playground",
           title: "Taman Bermain & Gazebo",
           subtitle: "Ruang terbuka hijau ramah anak untuk warga",
-          imagePath: "/panorama/subsidi/scene_44.jpg",
+          imagePath: "/panorama/subsidi/scene_44.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -465,7 +465,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/subsidi/scene_44.jpg",
+            imagePath: "/panorama/subsidi/scene_44.webp",
             dimensions: "20m x 30m",
             area: "600 m²",
             description:
@@ -476,7 +476,7 @@ export default function VirtualTourPage() {
           id: "jalan",
           title: "Row Jalan Utama",
           subtitle: "Jalan beton lebar 8 meter bersih & tertata rapi",
-          imagePath: "/panorama/subsidi/scene_70.jpg",
+          imagePath: "/panorama/subsidi/scene_70.webp",
           initialRotation: 0,
           hotspots: [
             {
@@ -491,7 +491,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/panorama/subsidi/scene_70.jpg",
+            imagePath: "/panorama/subsidi/scene_70.webp",
             dimensions: "Lebar 8m",
             area: "Akses Utama Beton",
             description:
@@ -502,7 +502,7 @@ export default function VirtualTourPage() {
           id: "gerbang",
           title: "Gerbang Utama Perumahan",
           subtitle: "Sistem satu pintu dengan pos pengamanan 24 jam",
-          imagePath: "/panorama/subsidi/scene_72.jpg",
+          imagePath: "/panorama/subsidi/scene_72.webp",
           initialRotation: 0,
           hotspots: [
             {

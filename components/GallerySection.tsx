@@ -35,22 +35,22 @@ export default function GallerySection() {
       desc: "Row jalan yang lebar dengan penataan lingkungan yang asri dan bersih.",
     },
     {
-      src: "/panorama/ruang_tamu.png",
+      src: "/panorama/subsidi/ruang_tamu.webp",
       title: "Interior Ruang Tamu",
       desc: "Desain interior lapang dengan pencahayaan alami yang optimal.",
     },
     {
-      src: "/panorama/kamar_utama.png",
+      src: "/panorama/subsidi/kamar_utama.webp",
       title: "Kamar Tidur Utama",
       desc: "Kamar tidur luas yang nyaman untuk relaksasi maksimal.",
     },
     {
-      src: "/panorama/dapur.png",
+      src: "/panorama/subsidi/dapur.webp",
       title: "Dapur & Ruang Makan",
       desc: "Dapur bersih bernuansa minimalis modern yang fungsional.",
     },
     {
-      src: "/panorama/kamar_anak.png",
+      src: "/panorama/subsidi/kamar_anak.webp",
       title: "Kamar Tidur Anak",
       desc: "Kamar anak bernuansa ceria dengan sirkulasi udara yang baik.",
     },
