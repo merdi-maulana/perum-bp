@@ -26,25 +26,25 @@ export default function GaleriPage() {
 
   const galleryItems: GalleryItem[] = [
     {
-      src: "/images/gerbang.png",
+      src: "/images/gerbang.webp",
       title: "Gerbang Utama & Pos Keamanan",
       desc: "Sistem gerbang satu pintu (One Gate System) dengan pos keamanan 24 jam untuk keamanan maksimal penghuni.",
       category: "fasilitas",
     },
     {
-      src: "/images/rumah_subsidi_1.png",
+      src: "/images/rumah_subsidi_1.webp",
       title: "Fasad Rumah Subsidi Tipe 36/60",
       desc: "Desain minimalis modern dengan struktur dinding kokoh, carport, dan taman depan yang hijau.",
       category: "subsidi",
     },
     {
-      src: "/images/rumah_subsidi_2.jpg",
+      src: "/images/rumah_subsidi_2.webp",
       title: "Lingkungan Cluster Subsidi",
       desc: "Row jalan beton yang lebar dan bersih dengan sistem drainase bawah tanah di sepanjang blok perumahan.",
       category: "subsidi",
     },
     {
-      src: "/images/rumah_komersil.jpg",
+      src: "/images/rumah_komersil.webp",
       title: "Fasad Rumah Komersil Tipe 45/84",
       desc: "Hunian komersil modern eksklusif 2 lantai dengan desain arsitektur premium untuk keluarga dinamis.",
       category: "komersil",

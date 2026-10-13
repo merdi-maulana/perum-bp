@@ -55,7 +55,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/images/rumah_subsidi_1.png",
+            imagePath: "/images/rumah_subsidi_1.webp",
             dimensions: "6m x 10m",
             area: "LT 60 m² / LB 36 m²",
             description:
@@ -81,7 +81,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/images/rumah_subsidi_2.jpg",
+            imagePath: "/images/rumah_subsidi_2.webp",
             dimensions: "3m x 3.5m",
             area: "10.5 m²",
             description:
@@ -122,7 +122,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/images/rumah_subsidi_2.jpg",
+            imagePath: "/images/rumah_subsidi_2.webp",
             dimensions: "3m x 3.5m",
             area: "10.5 m²",
             description:
@@ -252,7 +252,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/images/rumah_komersil.jpg",
+            imagePath: "/images/rumah_komersil.webp",
             dimensions: "7m x 12m",
             area: "LT 84 m² / LB 45 m²",
             description:
@@ -512,7 +512,7 @@ export default function VirtualTourPage() {
             },
           ],
           info: {
-            imagePath: "/images/gerbang.png",
+            imagePath: "/images/gerbang.webp",
             dimensions: "12m x 15m",
             area: "One Gate System",
             description:

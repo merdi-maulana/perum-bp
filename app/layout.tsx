@@ -16,7 +16,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "The Organic Sanctuary - Hunian Asri Terjangkau",
-  description: "Wujudkan impian memiliki rumah dengan konsep nature-living yang terjangkau. Subsidi pemerintah, lokasi strategis, siap huni.",
+  description:
+    "Wujudkan impian memiliki rumah dengan konsep nature-living yang terjangkau. Subsidi pemerintah, lokasi strategis, siap huni.",
 };
 
 export default function RootLayout({
@@ -25,7 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${plusJakartaSans.variable} ${inter.variable} scroll-smooth`}>
+    <html
+      lang="id"
+      className={`${plusJakartaSans.variable} ${inter.variable} scroll-smooth`}
+    >
       <body className="min-h-screen bg-background text-foreground flex flex-col font-body pb-16 md:pb-0">
         {children}
         <WhatsAppButton variant="floating" />

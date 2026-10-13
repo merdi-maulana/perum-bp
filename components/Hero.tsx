@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import gerbang from "@/public/images/gerbang.png";
+import gerbang from "@/public/images/gerbang.webp";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Hero(){
